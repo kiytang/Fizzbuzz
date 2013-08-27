@@ -1,13 +1,19 @@
-def multiple_of?(x, multiple)
-  x % multiple == 0	
+class Fixnum
+  def multiple_of?(multiple)
+    self % multiple == 0
+  end
 end
 
+#def multiple_of?(x, multiple)
+#  x % multiple == 0	
+#end
+
 (1..100).each do |x| 
-  if multiple_of?(x, 3) && multiple_of?(x, 5)
+  if x.multiple_of?(3) && x.multiple_of?(5)
   	print "FizzBuzz "
-  elsif multiple_of?(x, 3)
+  elsif x.multiple_of?(3)
   	print "Fizz "
-  elsif multiple_of?(x, 5)
+  elsif x.multiple_of?(5)
   	print "Buzz "
   else
   	print "#{x} "
