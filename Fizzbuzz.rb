@@ -1,7 +1,11 @@
+def multiple_of_3(x)
+  x % 3 == 0	
+end
+
 (1..100).each do |x| 
-  if x % 3 == 0 && x % 5 == 0
+  if multiple_of_3(x) && x % 5 == 0
   	print "FizzBuzz "
-  elsif x % 3 == 0
+  elsif multiple_of_3(x)
   	print "Fizz "
   elsif x % 5 == 0
   	print "Buzz "
