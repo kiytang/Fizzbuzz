@@ -1,3 +1,4 @@
+#Add multiple_of? method to Fixnum using metaprogramming.
 class Fixnum
   def multiple_of?(multiple)
     self % multiple == 0
